@@ -4,8 +4,8 @@ This repo provides an example recipe for a ServiceNow Cloud Native Operations (C
 
 To build this image in AWS using CodeBuild, populate the following Secrets Manager secrets:
 
-"dockerhub/pass1":*dockerhub password*
-"dockerhub/username1":*dockerhub user name*
-"dockerhub/awsacctid":*AWS account ID*
+ - "dockerhub/pass1":*dockerhub password*
+ - "dockerhub/username1":*dockerhub user name*
+ - "dockerhub/awsacctid":*AWS account ID*
 
 Make sure your codebuild IAM policy has permissions to read and decrypt the "dockerhub/\*" secrets.
